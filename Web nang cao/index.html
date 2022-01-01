@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Social</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Tieu de tim kiem -->
+    <div>
+        <nav class=" navbar navbar-expand-sm navbar-light fixed-top shadow-sm bg-white navbar-index">
+            <label for="nav-tablet-input" class="nav__bars-btn">
+				<i class="fas fa-bars"></i>
+			</label>
+            <li class="nav-item nav-item-search">
+                <a></a>
+                <form id="searchForm" action="/search" method="get">
+                    <input value="" type="search" class="form-control search" name="search" id="search" placeholder="Tìm kiếm...">
+                </form>
+                <a></a>
+            </li>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+                <ul class="navbar-nav  mt-lg-0">
+                    <li class="nav-item nav-item-mduser">
+                        <a></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sign-out" ><i class="fas fa-sign-out-alt"></i> Đăng xuất</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Phan danh muc -->
+        <input type="checkbox" name="" class="nav__input" id="nav-tablet-input" hidden>
+        <label for="nav-tablet-input" class="nav__bars-btn">
+			<i class="fas fa-bars"></i>
+		</label>
+        <label for="nav-tablet-input" class="nav__overlay"></label>
+
+        <nav class="nav__tablet nav__tablet-input">
+            <label for="nav-tablet-input" class="nav__tablet-close">
+				<i class="fas fa-times"></i>    
+			</label>
+            <ul class="navbar-nav nav__tablet-list">
+                <li>
+                    <a class="nav__tablet-link"><i class="fa fa-home"></i> Trang chủ</a>
+                </li>
+                <li>
+                    <a class="nav__tablet-link"><i class="fa fa-bell"></i> Thông báo mới</a>
+                </li>
+
+                <input type="checkbox" name="" class="nav__input-sidetop" id="nav-sidebar-inputtop" hidden>
+                
+                <label for="nav-sidebar-inputtop" class="nav__tablet-link"> Phân loại thông báo </label>
+                <li class="nav-sidebar-litop">
+                    <a class="nav__tablet-link">&emsp;&emsp;<i class="fa fa-users"></i> Phòng ban</a>
+                    <a class="nav__tablet-link">&emsp;&emsp;<i class="fa fa-th-list"></i> Tất cả thông báo</a>
+                </li>
+
+                <input type="checkbox" name="" class="nav__input-sidebot" id="nav-sidebar-inputbot" hidden>
+                
+                <li>
+                    <a></a>
+                </li>
+                <li>
+                    <a class="nav__tablet-link sign-out"><i class="fa fa-sign-out-alt"></i> Đăng xuất</a>
+                </li>
+            </ul>
+        </nav>
+		
+        <nav class="nk-sidebar">
+            <div id="sidebar-wrapper">
+                <div class="sidebar-heading">DANH MỤC </div>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action"><i class="fa fa-home"></i> Trang chủ</a>
+                    <span class="list-group-item"> Phân loại thông báo </span>
+                    <a class="list-group-item list-group-item-action">&emsp;&emsp;<i class="fa fa-users"></i> Phòng ban</a>
+                    <a class="list-group-item list-group-item-action">&emsp;&emsp;<i class="fa fa-th-list"></i> Tất cả thông báo</a>
+                </div>
+            </div>
+        </nav>
+		
+        <!-- Danh muc thong bao moi -->
+        <nav class="nk-sidebarright">
+            <div id="sidebar-wrapper">
+                <div class="sidebar-heading">THÔNG BÁO MỚI</div>
+                <a class="read-more"><u>Xem tất cả</u></a><br>
+
+                <div class="list-group notice notice-badel">
+                    <a class="list-group-item list-group-item-action group-odd ">
+                        <span class="notice-time">[Phòng CTHSSV] - 28/12/2021</span><br>
+                        <span class="notice-title double-line">Khảo sát về việc sử dụng dịch vụ tại căn tin Trường Đại học Tôn Đức Thắng</span><br>
+                    </a>
+                    <a class="list-group-item list-group-item-action group-even">
+                        <span class="notice-time">[Khoa công nghệ thông tin] - 28/12/2021</span><br>
+                        <span class="notice-title double-line">Kế hoạch tổ chức mở lớp ôn tập cho sinh viên được gia hạn đào tạo hoặc các môn không còn mở</span><br>
+                    </a>
+                    <a class="list-group-item list-group-item-action group-odd ">
+                        <span class="notice-time">[Phòng Đại học] - 28/12/2021</span><br>
+                        <span class="notice-title double-line">Thông báo về việc đăng ký môn học trong HK2/2021-2022</span><br>
+                    </a>
+                    <a class="list-group-item list-group-item-action group-even">
+                        <span class="notice-time">[Phòng tài chính] - 29/12/2021</span><br>
+                        <span class="notice-title double-line">Hướng dẫn các bước thanh toán học phí qua ngân hàng</span><br>
+                    </a>
+                    <a class="list-group-item list-group-item-action group-odd ">
+                        <span class="notice-time">[Phòng Đại học] - 27/12/2021</span><br>
+                        <span class="notice-title double-line">Dữ liệu xét bổ sung cấp chứng chỉ GDQP theo kế hoạch đợt tháng 12/2021</span><br>
+                    </a>
+                    <a class="list-group-item list-group-item-action group-even">
+                        <span class="notice-time">[Phòng Đại học] - 27/12/2021</span><br>
+                        <span class="notice-title double-line">Lịch thi + Danh sách thi cuối kỳ HK dự thính 1/2021-2022 dành cho sinh viên hoãn thi</span><br>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Modal post bai -->
+        <div class="box">
+            <div class="container-3">
+                <span class="icon"><i class="fa fa-search"></i></span>
+                <input type="search" id="search" placeholder="Bạn đang nghĩ gì?" />
+            </div>
+        </div>
+    </div> 
+</body>
+
+</html>
